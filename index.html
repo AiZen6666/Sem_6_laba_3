@@ -1,0 +1,63 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Топ 50 игроков мира</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Топ 50</h2>
+    <form id = "filter">
+        <p>
+            <label for="nickname">Nickname: </label>
+            <input type="text" id="nickname">
+        </p>
+        <p>
+            <label for="country">Country: </label>
+            <input type="text" id="country">
+        </p>
+        <p>
+            <label for="team">Team: </label>
+            <input type="text" id="team">
+        </p>
+        <p>
+            <label for="ratingFrom">Rating: </label>
+            от <input type="number" id="ratingFrom">
+            до <input type="number" id="ratingTo">
+        </p>
+        <p>
+            <label for="kdFrom">K/D: </label>
+            от <input type="number" id="kdFrom">
+            до <input type="number" id="kdTo">
+        </p>
+        <input type="button" value="Найти" id = "searchButton">
+        <input type="button" value="Очистить фильтры" id = "clearButton">
+    </form>
+    <form id="sort">
+        <p> Сортировка по</p>
+        <p>
+            Первый уровень
+            <select id="fieldsFirst">
+            </select>
+            По убыванию? <input type = "checkbox" id = "fieldsFirstDesc">
+        </p>
+        <p>
+            Второй уровень
+            <select id="fieldsSecond">
+            </select>
+            По убыванию? <input type = "checkbox" id = "fieldsSecondDesc">
+        </p>
+        <p>
+            Третьий уровень
+            <select id="fieldsThird">
+            </select>
+            По убыванию? <input type="checkbox" id="fieldsThirdDesc">
+        </p>
+        <input type= "button" value="Сортировка" id = "sortButton">
+        <input type= "button" value="Сбросить сортировку" id = "researchButton">
+    </form>
+    <table id = "list">
+    </table>
+</body>
+<script src="data.js"></script>
+<script src="program.js"></script>
+</html>
